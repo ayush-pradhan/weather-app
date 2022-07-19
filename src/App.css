@@ -1,38 +1,51 @@
 .App {
+  background: rgba(8,8,8,.68) url("./Images/pexels-stanislav-kondratiev-2909261.jpg") center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
   text-align: center;
+  font-size: 1.25rem;
+  font-family: "Roboto",sans-serif;
+  color: #fff;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.random{
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  top: 0;
+  line-height: 1.4rem;
+  padding: 2rem;
+  box-shadow: 10px 10px 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 30vh;
+  width: 30vw;
+  margin: auto;
+  box-shadow: 10px 10px 500px;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-card #current-temp {
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#description {
+  text-transform: capitalize;
+}
+
+.chart{
+  width: 60%;
+  margin: auto;
+}
+
+.temp {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }
