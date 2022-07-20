@@ -32,17 +32,31 @@
   box-shadow: 10px 10px 500px;
 }
 
+
+.chart{
+  width: 60%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .weather-card {
+    width: 100%;
+  }
+  .random {
+    position: relative;
+  }
+
+  .chart{
+    margin-top: 3rem;
+    width: 100%;
+  }
+}
 .weather-card #current-temp {
   font-size: 3rem;
 }
 
 #description {
   text-transform: capitalize;
-}
-
-.chart{
-  width: 60%;
-  margin: auto;
 }
 
 .temp {
